@@ -1,0 +1,12 @@
+http, https, dns, ftp, ssh  - permit sa ruleze nodejs ca mini server
+
+app - server <--- client requests
+app - client ---> sa trimita requesturi pe alte servere
+
+
+termeni:
+1) IP address  -- network - each device (ip)
+2) domain   -- pentru oameni, pentru accesara site-urilor  domain->ip
+3) port  -- pentru schimb de informatie; port i/o - virtual (number)
+OSI Network Model
+
