@@ -1,0 +1,33 @@
+<body>
+    
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <script>
+
+        var parent = document.querySelector('ul');
+        console.log(parent);
+        
+        //coloreaza primul si ultimul
+
+        function addColor( parent) {
+            //varianta veche
+            // var first = parent.firstElementChild;
+            // var last = parent.lastElementChild;
+
+            //varianta noua
+            var {firstElementChild: first, lastElementChild: last} = parent;
+
+            first.style.color = "#0F0";
+            last.style.color = "0A0";
+        }
+
+        addColor(parent);  
+    
+    </script>
+
+</body>

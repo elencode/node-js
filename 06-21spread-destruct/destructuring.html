@@ -1,0 +1,40 @@
+<script>
+
+   // destructuring - abordare care permite sa extragem doar anumite componente din array/object.
+
+   var a = [10,20,30];
+
+   var x, y, z;
+
+//varianta veche
+//    x = a[0];
+//    y = a[1];
+//    z = a[2];
+
+//[x,y,z] = a;  // varianta noua
+// flexibil [y,x,z]=a
+//daca mai multe variable - atunci undefined
+//[x,y,z,w=100] = a;
+//console.log(x,y,z,w);
+
+
+//Objects
+
+var o = {
+    first: 10,
+    second: 20,
+    third: 30,
+    fourth: 40
+}
+
+var first, second, third;
+
+({first, third} = o); //daca nu declaram, le luam in paranteze ()
+// dar asa se poate fara (): var {first, third} = o;
+
+//var {first: f, third: t} = o; // cu alte denumiri de variabile
+console.log(first, third);
+
+
+
+</script>

@@ -1,0 +1,26 @@
+nodejs
+
+1) install
+
+*run as admin
+*evironment path
+node - cel care lanseaza scripturile
+npm - manages pachetele
+
+node -v  (12)
+npm -v  (>5)
+
+cand se ruleaza in browser, variabilele stau
+cand in nodejs, variabilele stau cat se executa codul
+
+
+modules
+
+1metoda)
+require('module-name')
+
+2metoda)
+import from module-name
+
+
+npmjs.com - diferite module care nu s-au incarcat odata cu instalarea nodejs

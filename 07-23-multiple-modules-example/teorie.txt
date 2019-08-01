@@ -1,0 +1,19 @@
+js
+var x = 10; // variabla globala
+window.x = 10;
+
+in nodejs exista un obiect global in care se aduna toate variabilele. 
+global
+
+console.log(global);
+
+fiecare script "index.js","test.js" - reprezinta un modul(care este un obiect) = o sectiune care se conecteaza la aplicatia principala
+ca sa accesam obiectul se foloseste 'module' ( ca si 'this')
+module - reprezinta MODULUL CURENT
+tot ce se declara in modul sunt variabile locale si nu sunt accesibile din afara modulului
+
+console.log(module);
+
+datele care vrem sa fie scoase in afara - trebuie sa fie exportate
+
+//nodejs file system

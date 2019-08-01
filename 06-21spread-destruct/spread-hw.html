@@ -1,0 +1,27 @@
+<body>
+    
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <script>
+
+        var items = document.querySelectorAll('li');
+        console.log(items);
+        
+        //coloreaza primul si ultimul
+        function addColor(first, ...rest) {
+            first.style.color = "#0F0";
+            rest[rest.length-1].style.color = "0A0";
+        }
+
+       // addColor(items[0], items[1]); //varianta veche
+
+        addColor( ...items); //varianta noua
+        
+    </script>
+
+</body>

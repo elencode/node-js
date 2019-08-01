@@ -1,0 +1,22 @@
+<script>
+//spread operator...value, ...variable (Array)
+
+var a = [10, 20, 30];
+
+function f(x,y,z) {
+    console.log(x, y, z);
+}
+
+f( a[0],a[1],a[2]); //varianta veche
+
+//distribuie valorile din array in urmatoarele celule
+f( ...a );
+
+
+//daca sunt mai multe valori -> celelalte se ignora
+//daca sunt mai putine -> tot functioneaza, dar undefined
+
+//spread operator - vine o colectie si noi o desfasuram.
+
+
+</script>
