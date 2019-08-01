@@ -1,0 +1,31 @@
+
+<script>    
+
+    //callback - apeleaza invers
+    //IoC - inversion of control
+
+/////////////////DIRECT CONTROL
+// declaration
+//     function f() {
+//         alert();
+//     }
+// direct call
+//     f();
+
+// //////////////////INVERTED CONTROL
+// setInterval (f, 1000);
+
+
+
+var data = [10,5,-10,20,30]; //array
+
+function positive(element) {
+    if (element >= 0)
+        return true;
+    else
+        return false;
+}
+
+alert(positive(10));
+console.log(data.filter(positive)); //functia joaca rolul de callback doar aici
+</script>

@@ -1,0 +1,44 @@
+<script>    
+
+        var students = [
+            { fullname: "John Travolta", year: 1957, mark: 9.7 },
+            { fullname: "Marry Poppins", year: 1980, mark: 8.0 },
+            { fullname: "Arnold TooLong", year: 1947, mark: 9.0 },
+            { fullname: "Jilan Jor", year: 1970, mark: 5.0}
+        ];
+        
+        // <= 30
+        var good_students = students.filter( isGood );
+        
+        // function isGood(student) {
+        //     if (student.mark >= 7.0)
+        //         return true;
+        //     else
+        //         return false;
+        // }
+
+        //optimizat
+        function isGood(student) {
+            return student.mark >= 7.0;
+        }
+        
+        // console -> doar fullname studentilor care invata bine >=7.0
+       // console.log(good_students);
+
+        // for (var i = 0; i < good_students.length; i++){
+        //     console.log(good_students[i].fullname);
+        // }
+
+        good_students.forEach ( function (student) { 
+            console.log(student.fullname);
+        });
+
+
+        //version 2   // arrow functions + chaining
+
+        students.filter( student => student.mark >= 7.0)
+                .forEach( student => console.log(student.fullname));
+
+     
+
+        </script>

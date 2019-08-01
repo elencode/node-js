@@ -1,0 +1,61 @@
+<body>
+    <div class="container">
+        <form>
+            prices
+            <input onkeyup="updateList()" type="text" placeholder="from">
+            <input onkeyup="updateList()" type="text" placeholder="to">
+        </form>
+        <hr>
+        <div id="results">
+
+        </div>
+    </div>
+
+    <script>
+        class Food {
+            constructor (name, price) {
+                this.name = name;
+                this.price = price;
+            }
+            render() {
+                var r_div = document.getElementById('results');
+                var div = document.createElement('div');
+                var h2 = document.createElement('h2');
+                    h2.innerHTML = this.name;
+                var p = document.createElement('p');
+                    p.innerHTML = this.price;
+                div.appendChild(h2);
+                div.appendChild(p);
+
+                r_div.appendChild(div);         
+            }
+        }
+
+        var food_list = [
+            new Food ("Pizza 7 cheeses", 200),
+            new Food ("Burger de Lux", 100),
+            new Food ("Summer Salad", 50)
+        ];
+
+        // food_list.forEach (food => food.render()) ;
+
+        function updateList () {
+            var r_div = document.getElementById('results');
+            r_div.innerHTML='';
+
+            var input1 = document.querySelectorAll('input')[0].value || 0;
+            var input2 = document.querySelectorAll('input')[1].value || Number.MAX_VALUE;
+
+            food_list.filter(selectProduct).forEach (food => food.render()) ;
+            //sa ne arate produsele care corespund valorilor afisate in input
+           // ignoram situatia cand un input nu are valoare
+
+            function selectProduct(product) {
+                return (product.price >= input1 && product.price <= input2);
+            }      
+        }
+        updateList();
+        
+
+    </script>
+</body>
