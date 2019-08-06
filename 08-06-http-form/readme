@@ -1,0 +1,13 @@
+acest exemplu creeaza un site care afiseaza un formular,
+ care permite sa colectezi subscriptii ( adrese de emailuri) si apoi 
+ permite sa trimiti automat emailuri pe adresele colectate
+
+
+ ? - cand se transmit datele prin metoda get 
+
+ daca vrem sa transmitem ceva prin formulare trebuie de pus "name" in input
+
+ %40 - @ - se codeaza, ca sa se transmita corect in diferite dispozitive.
+
+
+ 
