@@ -11,7 +11,7 @@
   "dependencies": {
     "autoprefixer": "^9.6.1",
     "fs": "0.0.1-security",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.17",
     "sass": "^1.22.9"
   }
